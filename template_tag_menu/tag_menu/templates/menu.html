@@ -1,0 +1,7 @@
+<menu>
+    {% for item in menu_items %}
+    <ul>
+        <pre>{{ item.indent }}{% if item.href %}<a href="{{ item.href }}">{{ item.name }}</a>{% else %}{{ item.name }}{% endif %}</pre>
+    </ul>
+    {% endfor %}
+</menu>
